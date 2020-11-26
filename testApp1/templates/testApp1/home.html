@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% extends "testApp1/base.html" %}
+{% block content %}
+{% for destination in destinations %}
+<div class="row">
+    <div class="col">
+        <div class="card card-body">
+            <form method="get">
+                {{myFilter.form}}
+                <button class="btn btn-primary" type="submit">Search</button>
+            </form>
+
+        </div>
+
+    </div>
+</div>
+<br>
+<article class="media content-section">
+    <div class="media-body">
+        <div class="article-metadata">
+            <a class="mr-2" href="#">{{destination.country}}</a>
+            <small class="text-muted">{{ destination.date_posted }}</small>
+        </div>
+        <h2><a class="article-title" href="#">{{destination.name}}</a></h2>
+        <p class="article-content">Package : {{destination.package}} with the rating {{destination.rating}} and
+            {{destination.image}} </p>
+    </div>
+</article>
+{% endfor %}
+{% endblock content %}
