@@ -12,8 +12,12 @@ I was leading the team, and was responsible for the functionality development of
 Python pipline installations
 
 pipenv install django-crispy-forms
+
 pipenv install django-filter
+
 pipenv install geopy
+
 pipenv install geoip2
+
 pipenv install folium
 
