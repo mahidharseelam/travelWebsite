@@ -16,3 +16,4 @@ pipenv install django-filter
 pipenv install geopy
 pipenv install geoip2
 pipenv install folium
+
